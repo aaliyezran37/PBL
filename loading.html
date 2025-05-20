@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loading.....</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/animations/loading-unscreen.gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+    body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+.spinner1, .spinner2, .spinner3, .spinner4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white transparent white transparent;
+}
+
+.spinner1 {
+    height: 200px;
+    width: 200px;
+    border-width: 6px;
+    animation: spin 4s linear infinite;
+    z-index: -1;
+}
+
+.spinner2 {
+    height: 150px;
+    width: 150px;
+    border-width: 6px;
+    animation: spin-back 3s linear infinite;
+    z-index: 0;
+}
+
+.spinner3 {
+    height: 100px;
+    width: 100px;
+    border-width: 6px;
+    animation: spin 2s linear infinite;
+    z-index: -1;
+}
+
+.spinner4 {
+    height: 75px;
+    width: 75px;
+    border-width: 6px;
+    animation: spin-back 1.5s linear infinite;
+    z-index: 0;
+}
+
+/* Animations */
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes spin-back {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+</style>
+
+<body>
+    <div class="spinner1"></div>
+    <div class="spinner2"></div>
+    <div class="spinner3"></div>
+    <div class="spinner4"></div>
+</body>
+<script>
+    let time = Math.floor((Math.random() * 8777) + 1) + Math.floor((Math.random() * 2523) + 1);
+    console.log(time);
+    setTimeout(function() {
+        window.location.href = "gamepage.html"
+    }, time)
+    if (time<1350){
+        console.log("Rare time!");
+        console.log("AAAAA 🚡🚡🚡")
+    }else if (time < 2000){
+        console.log("Low time!");
+    }
+</script>
+
+</html>

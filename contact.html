@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Us </title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            color: white;
+            font-family: "Lexend", Arial, Helvetica, sans-serif;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: #484545;
+            border: none;
+            border-bottom: 1.5px blueviolet solid;
+            border-radius: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            padding: 5px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-bottom: 3px blueviolet solid;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            padding: 5px;
+            background-color: black;
+            border: 1.5px blueviolet solid;
+            border-radius: 5px;
+            width: 70px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        #form {
+            margin: 30px;
+            padding: 20px;
+            border: 3px white solid;
+            border-radius: 35px;
+            max-width: 540px;
+            color: white;
+            transform: translateX(50%);
+            right: 50%;
+        }
+
+        #feedback-type {
+            background-color: #484545;
+            ;
+            color: white;
+            border-bottom: 3px blueviolet solid;
+            border-radius: 15px;
+        }
+
+        @font-face {
+            font-family: 'Lexend';
+            src: url("assets/fonts/Lexend-VariableFont_wght.ttf");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="landingpage.html">
+                <img src="assets/images/logos/nojivision-purple.svg" width="250px">
+            </a>
+            <div class="right-icons">
+                <li>
+                    <a href="#about">
+                        <img src="assets/images/icons/about.svg" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="assets/images/icons/feedback.svg" width="30px">
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </header>
+
+    <form method="post" enctype="text/plain" id="form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="mail" required><br><br>
+
+        <label for="purpose">Reason of Form Filling:</label><br>
+        <select id="feedback-type" name="feedback-type" required>
+            <option value="null">Select Your Reason</option>
+            <option value="complaints">Complaints</option>
+            <option value="questions">Questions</option>
+            <option value="bug-report">Bug Report</option>
+            <option value="others">Others</option>
+        </select> <br /><br />
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="reset" value="Clear" style="color: white;">
+        <input type="submit" value="Send" style="color: white;">
+    </form>
+    <div style="
+    width: 300px;
+    aspect-ratio: 12 / 1;
+    background-color: rgb(104, 66, 141);
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    transform: rotate(-20deg);"></div>
+    <div style="
+    width: 300px;
+    aspect-ratio: 20 / 1;
+    background-color: blueviolet;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    transform: rotate(-20deg);"></div>
+    <div style="
+    width: 300px;
+    aspect-ratio: 20 / 1;
+    background-color: #a361e1;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: rotate(-20deg);"></div>
+    <div style="
+    width: 300px;
+    aspect-ratio: 12 / 1;
+    background-color: blueviolet;
+    position: absolute;
+    top: 60%;
+    right: -10%;
+    transform: rotate(-20deg);"></div>
+    <div style="
+width: 0;
+height: 0;
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-bottom: 50px solid #7023b8;
+position: absolute;
+top: 45%;
+left: 5%;
+"></div>
+
+    <div style="
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-top: 60px solid #7e3cbb;
+position: absolute;
+bottom:  55%;
+right: 5%;
+"></div>
+
+    <div style="
+width: 0;
+height: 0;
+border-top: 40px solid transparent;
+border-bottom: 40px solid transparent;
+border-left: 80px solid rgb(186, 11, 230);
+position: absolute;
+top: 65%;
+left: 13%;
+"></div>
+
+    <div style="
+    width: 100px;
+    height: 75px;
+    background-color: #a361e1;
+    clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%, 75% 100%,
+        25% 100%, 0% 50%
+    );
+    position: absolute;
+    bottom: 52%;
+    right: 20%;
+    transform: rotate(-14deg);
+"></div>
+
+
+    <div id="footer" style="color: #ffffff80; text-align: center;">
+        &copy; NojiVision Studios <span id="year"></span>
+        <img src="assets/images/logos/nojivision-white.svg"
+            style="display: block; width: 200px; margin-left: auto; margin-right: auto; opacity: 50%;">
+    </div>
+    <script>
+        const d = new Date();
+        document.getElementById("year").innerHTML = d.getFullYear();
+
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Halang submission default
+            sendEmail();        // Panggil fungsi
+        });
+
+        function sendEmail() {
+            const name = document.getElementById("name").value;
+            const mail = document.getElementById("email").value;
+            const comment = document.getElementById("comment").value;
+
+            const subject = encodeURIComponent("Feedback from " + name);
+            const body = encodeURIComponent(comment + "\n\nFrom: " + mail);
+
+            window.location.href = `mailto:aaliy.ezran13@gmail.com?subject=${subject}&body=${body}`;
+
+            // Show styled confirmation message
+            const successMsg = document.createElement("div");
+            successMsg.textContent = "Feedback successfully sent";
+            successMsg.style.position = "fixed";
+            successMsg.style.top = "20px";
+            successMsg.style.left = "50%";
+            successMsg.style.transform = "translateX(-50%)";
+            successMsg.style.padding = "15px 25px";
+            successMsg.style.backgroundColor = "blueviolet";
+            successMsg.style.color = "white";
+            successMsg.style.borderRadius = "10px";
+            successMsg.style.fontFamily = "Lexend, sans-serif";
+            successMsg.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.3)";
+            successMsg.style.zIndex = "9999";
+            document.body.appendChild(successMsg);
+
+            setTimeout(() => successMsg.remove(), 3000);
+
+            // Clear the form
+            document.getElementById("form").reset();
+        }
+
+    </script>
+
+
+</body>
+
+</html>

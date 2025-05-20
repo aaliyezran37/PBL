@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicles of the Skyward Legends - NojiVision</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="landingpage.html">
+                <img src="assets/images/logos/nojivision-purple.svg" width="250px">
+            </a>
+            <div class="right-icons">
+                <li>
+                    <a href="#about">
+                        <img src="assets/images/icons/about.svg" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="assets/images/icons/feedback.svg" width="30px">
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </header>
+    <div id="thumbnail">
+        <div>
+            <span id="title">Chronicles of the Skyward Legends</span>
+            <br>
+            <span id="tagline">Be resilient. Be adventurous. Be brave.
+            </span>
+        </div>
+        <button id="playbutton" onclick="window.location.href = 'loading.html'">
+            <img src="assets/images/icons/play.svg" style="width: 30px;">
+            <span style="font-size: 1.4em; position: relative; margin: auto 0; transform: translateY(-50%);">
+                Play
+            </span>
+        </button>
+    </div>
+    <br>
+    <div id="moreInfo">
+        <div id="preview">
+            <div>
+                <img src="assets/media/home.png" height="250">
+                <iframe src="assets/media/story.mp4" height="250" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="info">
+            <h1>Controls</h1>
+            <hr>
+            <div id="kbdFirstRow">
+                <div class="keyboard">
+                    W
+                    <span class="kbdTooltip">
+                        Jump
+                    </span>
+                </div>
+                <div class="keyboard">
+                    E
+                    <span class="kbdTooltip">
+                        Equip / Interact
+                    </span>
+                </div>
+                <div class="keyboard" style="margin-left: 120px;">
+                    ↑
+                    <span class="kbdTooltip">
+                        Jump
+                    </span>
+                </div>
+            </div>
+            <div id="kbdSecondRow">
+                <div class="keyboard">
+                    A
+                    <span class="kbdTooltip">
+                        Walk backwards
+                    </span>
+                </div>
+                <div class="keyboard">
+                    S
+                    <span class="kbdTooltip">
+                        Crouch
+                    </span>
+                </div>
+                <div class="keyboard">
+                    D
+                    <span class="kbdTooltip">
+                        Walk forwards
+                    </span>
+                </div>
+                <div class="keyboard">
+                    ← <!--Left arrow-->
+                    <span class="kbdTooltip">
+                        Walk backwards
+                    </span>
+                </div>
+                <div class="keyboard">
+                    ↓ <!--Down arrow-->
+                    <span class="kbdTooltip">
+                        Crouch
+                    </span>
+                </div>
+                <div class="keyboard">
+                    → <!--Right arrow-->
+                    <span class="kbdTooltip">
+                        Walk forwards
+                    </span>
+                </div>
+            </div>
+            <div id="spacebar">
+                <span class="kbdTooltip">
+                    Activate weapon
+                </span>
+            </div>
+        </div>
+        <div class="info" id="about">
+            <h1>About game</h1>
+            <hr>
+            <p>In this game, you go for an adventure in Skywards City, where you save the city from the terrors of the
+                Xanthrians. Get enough coins in each level, and complete the levels on time!
+
+            </p>
+        </div>
+        <div class="info">
+            <h1>Storyline</h1>
+            <hr>
+            <p>In 1456, a thriving territory named Skywards City was invaded by the Xanthrian Empire. The Xanthrians'
+                tyrant leader, Jámes Rodrigo del Xanthros, enforces the people of Skywards to pay a small tax. Four
+                years later, most of the Skyvarians have either been arrested, executed or enslaved by the Xanthrians.
+                David Shelbeck, a wealthy person is fed up with the Xanthrians. After the execution of his close friend,
+                William Sheringham, he took the noble decision to fight the Xanthrians.</p>
+        </div>
+        <div class="info" id="dev">
+            <h1>Developers</h1>
+            <hr>
+            <img src="assets/media/aaliy.jpg">
+            <img src="assets/media/shahrul.jpg">
+            <span id="devname">
+                <p id="firstRow">Aaliy Ezran</p>
+                <p id="secondRow">Shahrul Iqwan</p>
+            </span>
+            <span id="devname">
+                <p id="firstRow1">Lead Programmer</p>
+                <p id="secondRow">Lead Designer</p>
+            </span>
+        </div>
+        <div class="info">
+            <h1>Other information</h1>
+            <hr>
+            <table>
+                <tr>
+                    <th>
+                        Genre
+                    </th>
+                    <td>
+                        Platformer, Adventure
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Platforms
+                    </th>
+                    <td>
+                        Desktop, mobile
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Release date
+                    </th>
+                    <td>
+                        TBD 2025
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer" style="color: #ffffff80; text-align: center;">
+            &copy; NojiVision Studios <span id="year"></span>
+            <img src="assets/images/logos/nojivision-white.svg"
+                style="display: block; width: 200px; margin-left: auto; margin-right: auto; opacity: 50%;">
+        </div>
+    </div>
+    <script>
+        const d = new Date();
+        document.getElementById("year").innerHTML = d.getFullYear();
+    </script>
+</body>
+
+</html>
